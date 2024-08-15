@@ -1,0 +1,16 @@
+[2024-08-14 20:04:19] [ ERROR] [TratamientoServiceTest:30] [crearTabla] Unsupported connection setting " INIT" [90113-232]
+[2024-08-14 20:09:34] [ ERROR] [TratamientoServiceTest:30] [crearTabla] Syntax error in SQL statement "\000d\000aCREATE TABLE TRATAMIENTOS(\000d\000aID INT AUTO_INCREMENT PRIMARY KEY,\000d\000aCODIGO INT NOT NULL,\000d\000aDESCRIPCION VARCHAR(50) NOT NULL[*].\000d\000aPRECIO DECIMAL(5,2) NOT NULL)"; expected "DEFAULT, GENERATED, ON UPDATE, DEFAULT ON NULL, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+
+CREATE TABLE TRATAMIENTOS(
+ID INT AUTO_INCREMENT PRIMARY KEY,
+CODIGO INT NOT NULL,
+DESCRIPCION VARCHAR(50) NOT NULL.
+PRECIO DECIMAL(5,2) NOT NULL) [42001-232]
+[2024-08-14 20:10:11] [ INFO ] [DaoH2:39] [guardar] tratamiento guardado en base de datosTratamiento{id=3, codigo=4325, descripcion='CITA ODONTOLOGICA', precio=310.0}
+[2024-08-14 20:11:25] [ INFO ] [DaoH2:39] [guardar] tratamiento guardado correctamente en base de datos: Tratamiento{id=3, codigo=4325, descripcion='CITA ODONTOLOGICA', precio=310.0}
+[2024-08-14 20:11:58] [ INFO ] [DaoH2:82] [listarTodos] tratamientoTratamiento{id=1, codigo=32456, descripcion='CONSULTA GENERAL', precio=120.0}
+[2024-08-14 20:11:58] [ INFO ] [DaoH2:82] [listarTodos] tratamientoTratamiento{id=2, codigo=9876, descripcion='CONSULTA ESPECIALIZADA', precio=500.0}
+[2024-08-14 20:12:33] [ INFO ] [DaoH2:39] [guardar] tratamiento guardado correctamente en base de datos: Tratamiento{id=3, codigo=4325, descripcion='CITA ODONTOLOGICA', precio=310.0}
+[2024-08-14 20:12:33] [ INFO ] [DaoH2:82] [listarTodos] tratamientoTratamiento{id=1, codigo=32456, descripcion='CONSULTA GENERAL', precio=120.0}
+[2024-08-14 20:12:33] [ INFO ] [DaoH2:82] [listarTodos] tratamientoTratamiento{id=2, codigo=9876, descripcion='CONSULTA ESPECIALIZADA', precio=500.0}
+[2024-08-14 20:12:33] [ INFO ] [DaoH2:82] [listarTodos] tratamientoTratamiento{id=3, codigo=4325, descripcion='CITA ODONTOLOGICA', precio=310.0}
